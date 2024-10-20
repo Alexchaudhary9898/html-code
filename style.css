@@ -1,5 +1,42 @@
-h3{
-
-    font-size:30px;
-    color:blueviolet;
+body{
+font-family: Arial, Helvetica, sans-serif;
+background-color:aqua;
+color:blue;
+}
+h1{
+color:black
+}
+a {
+    color:orange;
+    text-decoration:none;
+}
+a:hover {
+    color:aquamarine;
+}
+ul > li {
+    font-weight:bold;
+}
+h1 +p{
+    background-color:cyan;
+    padding:10px;
+    border-radius:5px;
+}
+ul li:hover{
+    color:green;
+}
+ul li:nth-child(3){
+    background-color:darkblue;
+}
+p:not(:first of type){
+    text-decoration:underline;
+}
+ul li::before {
+    content:"🚀"
+}
+a::after{
+    content:"⭐"
+}
+p::first-letter{
+font-size:200%;
+color:yellow;
 }
