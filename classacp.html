@@ -1,0 +1,28 @@
+<html>
+
+<body>
+    <h2>How to use javascript to make a class
+    </h2>
+    <p id="student"></p>
+    <p id="student1"></p>
+    <script>
+        class student {
+            constructor(name, year) {
+                this.name = name; this.year = year;
+            }
+
+
+            age() {
+                let date = new Date();
+                return date.getFullYear() - this.year;
+            }
+        }
+        student = new student("Sudarshan", 1982 );
+        document.getElementById("student").innerHTML = " My name is " + student.name + " I am born in " + student.year + " My age is" + student.age();
+
+
+    </script>
+
+</body>
+
+</html>
