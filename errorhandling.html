@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Error Handling Javascript</title>
+</head>
+<body>
+    <h2>Java Script Error Handling</h2>
+    <p>This is a Example demonstrate of  how to use <b>Catch</b> To display errors</p>
+    <p id="error_message"></p>
+    <script>
+        try {
+            addalert("Welcome Guest");
+        }
+        catch(err){
+document.getElementById("error_message").innerHTML = err.message;
+        }
+    </script>
+</body>
+</html>
