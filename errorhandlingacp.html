@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>Error Handling Javascript</title>
+</head>
+
+<body>
+    <h2>Java Script Error Handling</h2>
+    <p>error handling in js</p> 
+    <p id="error_message"></p>
+    <script>
+        try {
+            addalert("hello people");
+        }
+        catch (err) {
+            document.getElementById("error_message").innerHTML = err.message;
+        }
+    </script>
+</body>
+
+</html>
