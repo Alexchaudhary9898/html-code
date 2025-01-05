@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <script>
+        function validateform() {
+            var x = document.forms["myForm"]["fage"].value;
+            if (x == "") {
+                alert("Age must be filled out");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="myForm" onsubmit="validateform()">
+        Age: <input type="text" Age="fage">
+        <input type="submit" value="Submit">
+        <p id="message"></p>
+    </form>
+</body>
+
+</html>
