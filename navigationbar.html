@@ -1,49 +1,90 @@
-<section>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navbar</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+.topnav a {
+    float: left;
+    color: #1aff1a;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav a.active {
+    background-color: #ffe066;
+    color: black;
+}
+</style>
+</head>
+<body>
 
-    <img class="mySlides" src="picture1.jpg" style="height: 500px; width: 100%;">
+    <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a class="#">About_Us</a>
+    <a class="#">Contact_Us</a>
+    </div>
+    <section>
+    
+        <img class="mySlides" src="picture1.jpg" style="height: 500px; width: 100%;">
+    
+        <img class="mySlides" src="picture2.jpg" style="height: 500px; width: 100%;">
+    
+    </section>
+    
+    <script>
 
-    <img class="mySlides" src="picture2.jpg" style="height: 500px; width: 100%;">
+        var myIndex = 0; // Index to track the current image
 
-</section>
+        carousel(); // Start the carousel function
 
-<script>
+        function carousel() {
 
-    var myIndex = 0; // Index to track the current image
+            var i;
 
-    carousel(); // Start the carousel function
+            var x = document.getElementsByClassName("mySlides"); // Get all images with class 'mySlides'
 
-    function carousel() {
+            // Hide all images
 
-        var i;
+            for (i = 0; i < x.length; i++) {
 
-        var x = document.getElementsByClassName("mySlides"); // Get all images with class 'mySlides'
+                x[i].style.display = "none";
 
-        // Hide all images
+            }
 
-        for (i = 0; i < x.length; i++) {
+            // Increment index
 
-            x[i].style.display = "none";
+            myIndex++;
+
+            if (myIndex > x.length) {
+
+                myIndex = 1; // Reset to first image if the index exceeds the number of images
+
+            }
+
+            // Display the current image
+
+            x[myIndex - 1].style.display = "block";
+
+            // Set a timeout to call the carousel function again after 3 seconds
+
+            setTimeout(carousel, 3000);
 
         }
 
-        // Increment index
+    </script>
 
-        myIndex++;
-
-        if (myIndex > x.length) {
-
-            myIndex = 1; // Reset to first image if the index exceeds the number of images
-
-        }
-
-        // Display the current image
-
-        x[myIndex - 1].style.display = "block";
-
-        // Set a timeout to call the carousel function again after 3 seconds
-
-        setTimeout(carousel, 3000);
-
-    }
-
-</script>
+</body>
+</html>
