@@ -1,26 +1,44 @@
-.pimg1, .pimg2, .pimg3{
-    position: relative;
-    opacity: 0.70;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+body, html {
+    height: 100%;
+    margin:0;
+    font-size: 16px;
+    font-family:"Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+    background-color: #b6f8ef;
 }
-.pimg3{
-    background-image:ur1('th.jpg');
-    min-height: 400px;
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
 }
-.section-dark{
-    background-color: black;
-    color: white;
+.topnav a {
+   display: inline;
+   color: #1affa3;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
 }
-.ptext{
-    position: absolute;
-    top: 50%;
-    width: 100%;
+.topnav a:hover {
+    background-color: #111;
+    background-color: #ffe066;
+    color:#000
+}
+.pimg1, {
+position: relative;
+opacity: 0.70;
+background-repeat:no-repeat;
+}
+.section {
     text-align: center;
-    font-size: 27px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
+    padding: 50px 80px;
 }
+.section light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+.section dark {
+    background-color: #282e34;
+    color: #ddd;
 }
