@@ -25,14 +25,9 @@ body, html {
     background-color: #ffe066;
     color:#000
 }
-.pimg1, {
-position: relative;
-opacity: 0.70;
-background-repeat:no-repeat;
-}
 .section {
     text-align: center;
-    padding: 50px 80px;
+    padding: 120px 80px;
 }
 .section light {
     background-color: #f4f4f4;
